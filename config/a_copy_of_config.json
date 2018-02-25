@@ -1,0 +1,19 @@
+{
+    "tests": {
+        "path": [
+            "tests/sprint01_features"
+             ],
+        "preffix": "test_",
+        "data": "$PATH"
+    },
+    "modules": {
+        "REST": {
+            "timeout": "50000",
+            "endpoint": "https://randomuser.me/api/",
+            "reset_headers": "True",
+            "otro_param": "here"
+        }
+    }
+
+}
+

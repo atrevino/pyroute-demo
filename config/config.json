@@ -1,0 +1,43 @@
+{
+    "tests": {
+        "path": [
+	    "tests/appium_module_tests"
+             ],
+        "preffix": "test_",
+        "data": "$PATH"
+    },
+    "modules": {
+        "REST": {
+            "timeout": "50000",
+            "endpoint": "https://randomuser.me/api/",
+            "reset_headers": "True",
+            "otro_param": "here"
+        },
+        "appium":{
+            "appium_url": "http://localhost:4723/wd/hub",
+	        "desired_caps": {
+		        "platformName": "Android",
+		        "appPackage": "uk.co.aifactory.chessfree",
+		        "appActivity": ".ChessFreeActivity",
+		        "app": "apks/chess_free.apk",
+		        "deviceName": "test"
+            }
+        }
+    },
+    "colors": {
+        "color": "on",
+        "custom": "BRG_CYAN",
+        "error": "RED",
+        "failure": "BRG_RED",
+        "loading_modules": "BRG_WHITE",
+        "loading_tests": "BRG_WHITE",
+        "modules_loaded": "BRG_WHITE",
+        "passed_time": "BRG_GREEN",
+        "pyroute_logo": "BRG_YELLOW",
+        "running_test": "BRG_WHITE",
+        "finished_test": "BRG_CYAN",
+        "tests_completed": "BRG_GREEN",
+        "tests_loaded": "BRG_WHITE",
+        "warning": "ORANGE"
+    }
+}
